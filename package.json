@@ -1,6 +1,6 @@
 {
   "name": "tshint",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "bin": "./src/index.js",
   "description": "zero config eslint for ts projects",
   "files": [
