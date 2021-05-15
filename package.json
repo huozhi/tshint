@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "bin": "./src/index.js",
   "description": "zero config eslint for ts projects",
-  "main": "index.js",
+  "files": [
+    "src"
+  ],
   "author": "huozhi",
   "license": "MIT",
   "dependencies": {

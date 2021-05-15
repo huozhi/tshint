@@ -22,15 +22,16 @@ async function main() {
   const args = arg({ '--fix': Boolean }, { argv: process.argv.slice(2) })
   
   const cwd = process.cwd()
-  const files = args._ || '.'
-  const withFixes = args['--fix']
   
+  const files = args._.length ? args._ : ['./**/*.ts']
+  const withFixes = args['--fix']
+  console.log(cwd, files, args, withFixes)
   const gitignores = getGitIgnores(cwd)
   const tsConfigPath = resolveTsConfigPath(cwd)
   
   lintConfig.ignorePatterns.push(...gitignores)
   if (!tsConfigPath) {
-    // throw new Error('Please provide `tsconfig.json` to include your source files')
+    throw new Error('Please provide `tsconfig.json` to include your source files')
   }
   
   const engine = new ESLint({
