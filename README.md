@@ -1,15 +1,13 @@
 # tshint
+> super simple and lightweight zero-config linter for ts and js projects.
 
-### Brief
+### Intro
 
-tshint is a super simple and lightweight zero-config linter for typescript projects.
-It's based
+tshint is a zero-config linter based on eslint, with all the recommended rules built inside. By default, the base presets include
 
 - `eslint:recommended`
 - `@typescript-eslint/recommended`
 - `@typescript-eslint/recommended-requiring-type-checking`
-
-Without any styling related rules.
 
 ### Install
 
