@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "bin": "./lib/index.js",
   "description": "zero config eslint for ts projects",
+  "scripts": {
+    "lint": "./lib/index.js ./lib"
+  },
   "files": [
     "lib"
   ],
