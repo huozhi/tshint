@@ -1,10 +1,10 @@
 {
   "name": "tshint",
   "version": "0.0.1",
-  "bin": "./src/index.js",
+  "bin": "./lib/index.js",
   "description": "zero config eslint for ts projects",
   "files": [
-    "src"
+    "lib"
   ],
   "author": "huozhi",
   "license": "MIT",
